@@ -1,0 +1,108 @@
+@font-face {
+    font-family: '1,617';
+    src: url('../fonts/1,617.otf') format('otf'),
+        /*url('../fonts/BigCaslon-Medium.woff') format('woff');*/
+    /*font-weight: 500;*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sauce grotesk';
+    src: url('../fonts/saucegrotesk-regularcsdemo.ttf') format('ttf'),
+        /*url('../fonts/BigCaslon-Medium.woff') format('woff');*/
+    /*font-weight: 500;*/
+    font-style: normal;
+}
+
+
+.sticky{
+  position: absolute;
+  left:23%;
+  top: 1.5%;
+  padding: 30px;
+  /*background-color: white;*/
+  text-align: center;
+  font-family: "1,617";
+  font-size:38px;
+  /*border: 2px solid #4CAF50;*/margin:0;
+ }
+
+ .maintext{
+ font-family: "sauce grotesk";
+  font-size:62px;
+  /*border: 2px solid #4CAF50;*/margin:21px;
+  /*padding-top: 30%;*/
+  color: black;
+  padding-left: 5%;
+  padding-right: 3%;
+  line-height: 1.6;
+
+
+  /*text-align: center;*/
+
+
+ }
+
+
+.long-way {
+  font-style: italic;
+  transition: all 2s ease-in-out;
+}
+
+.long-way:hover {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.cursor {
+  color: red;
+}
+
+.cursor {
+  cursor: url(../imgs/lipstick-cursor.png), auto;
+}
+
+.minor{
+	font-size: 40px;
+
+}
+
+ .ctrimage{
+  position: fixed;
+  top: 70%;
+  right: 37%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 39%;
+  height: auto;
+  z-index:-1;
+  transition: all 2s ease-in-out;
+ }
+
+.ctrimage:hover {
+  /*border-radius: 30px;*/
+  /*width: 200px;*/
+  /*height: 150px;*/
+  /*background-color: #ffe002;*/
+  -webkit-transform: scale(2.5);
+  cursor: pointer;
+}
+
+.simplelink {
+  text-decoration: none;
+  color: white;
+  /*background-color: #f2e1ff;*/
+  /*background: grey;*/
+  transition: all 0.1s ease;
+}
+
+.simplelink:hover {
+  background-color: #66ff44;
+}
+
+/*
+body {
+    display:grid; place-content:center; 
+    height:100vh;
+    overflow:hidden;
+}*/

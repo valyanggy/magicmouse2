@@ -1,0 +1,183 @@
+/** {
+    padding: 0px;
+    margin: 0px;
+}*/
+
+/* type */
+
+/*body {
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.4;
+    background-color: #fefefe;
+}*/
+
+/*.pagetitle{
+  font-family: "1,617";
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.4;
+    top: 30px;
+    position: -webkit-sticky;
+  position: sticky;
+  
+
+}*/
+
+
+
+@font-face {
+    font-family: '1,617';
+    src: url('../fonts/1,617.otf') format('otf'),
+        /*url('../fonts/BigCaslon-Medium.woff') format('woff');*/
+    /*font-weight: 500;*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sauce grotesk';
+    src: url('../fonts/saucegrotesk-regularcsdemo.ttf') format('ttf'),
+        /*url('../fonts/BigCaslon-Medium.woff') format('woff');*/
+    /*font-weight: 500;*/
+    font-style: normal;
+}
+
+
+.header{
+  font-family: "1,617";
+  font-size:38px;
+  color: black;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  /*background-color: white;*/
+  text-align: center;
+  font-family: "1,617";
+  font-size:38px;
+  /*border: 2px solid #4CAF50;*/margin:0;
+}
+
+
+
+
+
+
+.zoom {
+
+  padding: 1%;
+  /*top: 120%;
+  /*left: 200%;*/
+  /*background-color: green;*/
+  transition: transform .2s; /* Animation */
+  width:81%;
+ /* position: -webkit-sticky;
+  position: sticky;*/
+  top: 80%;
+  left:100%;
+  /*position: absolute;*/
+
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110%;
+  z-index: -10;
+}
+
+
+.zoom:hover + .background{
+  -webkit-filter: blur(10px);  Safari 6.0 - 9.0 
+  filter: blur(7px);
+}
+      
+
+
+
+.zoom:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+/*  position: -webkit-sticky;
+  position: sticky;*/
+/*  top: 50%;
+  left:60%;*/
+  /*top: 50%;
+  width: 30%;*/
+  
+
+}
+
+
+.window{
+  display: none;
+
+}
+
+.zoom:hover + .window{
+display: block;
+  font-family: "sauce grotesk";
+  font-size: 25px; 
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  background: black;
+  border: 3px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 10;
+}
+
+
+.zoom:hover + .content{
+display: block;
+  font-family: "sauce grotesk";
+  font-size: 25px; 
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  background: white;
+  border: 3px solid black;
+  padding: 5px;
+z-index: 10;
+}
+
+
+.test{
+  display:none;
+
+}
+
+.zoom:hover + .test{
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 110%;
+  z-index: 100;
+
+}
+  /*-webkit-filter: blur(10px);  Safari 6.0 - 9.0 
+  filter: blur(5px);
+
+}*/
+
+
+.text{
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 40%;
+  z-index: 10;
+}
+
+
+
+
+
+
